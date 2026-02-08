@@ -239,6 +239,24 @@
 8. [ ] Build for WebGL
 9. [ ] Test WebGL build in browser
 
+## ✅ InvalidCastException Fix Applied
+
+### CustomerSpawner Improvements:
+- [x] **Prefab Validation**: Added `ValidatePrefabSetup()` method that runs on Start()
+- [x] **Inspector Validation**: Added `OnValidate()` method for real-time prefab checking in Editor
+- [x] **Safe Instantiation**: Uses `GameObject` instantiation with proper component access
+- [x] **Component Validation**: Checks for `CustomerAI` component before and after instantiation
+- [x] **Error Handling**: Comprehensive error logging with specific messages
+- [x] **Try-Catch Protection**: Wrapped instantiation in try-catch for robust error handling
+
+### Key Features Added:
+1. **Prefab Component Check**: Validates prefab has CustomerAI component before use
+2. **Runtime Validation**: Logs clear errors if prefab setup is incorrect
+3. **Safe Component Access**: Uses `GetComponent<CustomerAI>()` instead of unsafe casting
+4. **Editor Feedback**: Warning messages appear in Inspector when prefab is invalid
+5. **Comprehensive Testing**: Created CustomerSpawnerTests.cs for unit testing
+6. **Editor Tool**: Created CustomerSpawnerValidator.cs for scene validation
+
 ## Testing Validation
 
 ### Play Mode Tests
@@ -255,6 +273,18 @@
 - [ ] Grid is visible in Scene view
 - [ ] All managers initialize without errors
 
+### InvalidCastException Fix Validation
+- [ ] **No InvalidCastException**: CustomerSpawner.SpawnCustomer runs without exceptions
+- [ ] **Prefab Validation**: Check Console for "Prefab validation passed" message on Play
+- [ ] **Error Messages**: Invalid prefab setup shows clear error messages in Console
+- [ ] **Component Access**: Safe GetComponent<CustomerAI>() usage prevents casting issues
+- [ ] **Inspector Warnings**: Invalid prefab assignments show warnings in Inspector
+
+### Editor Tool Testing
+- [ ] **Customer Spawner Validator**: Tools → Customer Spawner Validator menu works
+- [ ] **Validation Button**: "Validate All Customer Spawners" button functions correctly
+- [ ] **Test Prefab Creation**: "Create Test Customer Prefab" creates valid prefab
+
 ### WebGL Build Tests
 - [ ] Build completes without errors
 - [ ] Build size is reasonable (< 50 MB)
@@ -262,10 +292,11 @@
 - [ ] All Play Mode features work in browser
 - [ ] Performance is acceptable (30+ FPS)
 - [ ] No browser console errors
+- [ ] **No InvalidCastException**: Check browser console for any casting errors
 
 ## File Count Validation
 
-- Scripts: 11 files ✅
+- Scripts: 13 files ✅ (11 core + 2 test/editor tools)
 - Prefabs: 4 files ✅
 - Scenes: 1 file ✅
 - Materials: 1 file ✅
@@ -273,7 +304,7 @@
 - Package files: 2 files ✅
 - Documentation: 4 files ✅
 
-**Total Core Files: 29**
+**Total Core Files: 31**
 
 ## Final Validation Status
 
