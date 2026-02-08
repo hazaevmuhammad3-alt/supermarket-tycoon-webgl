@@ -21,7 +21,11 @@ public class ShelfController : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (InventoryManager.Instance != null)
+        if (UIManager.Instance != null)
+        {
+            UIManager.Instance.OnShelfClicked(this);
+        }
+        else if (InventoryManager.Instance != null)
         {
             ShowStockingUI();
         }

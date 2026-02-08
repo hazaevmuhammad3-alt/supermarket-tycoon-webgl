@@ -226,6 +226,37 @@ Upload the entire build folder to a web hosting service:
 - Mobile WebGL support varies by browser
 - Recommended browsers: Chrome, Firefox, Edge (latest versions)
 
+### WebGL-Specific Player Settings
+
+1. **Resolution:** 
+   - Default Canvas Width: 960
+   - Default Canvas Height: 600
+   
+2. **Publishing Settings:**
+   - Enable Exceptions: Explicitly Thrown Exceptions Only
+   - Compression Format: Gzip
+   - Name Files As Hashes: Recommended for caching
+   - Data Caching: Enabled
+
+3. **Memory:**
+   - Initial Memory Size: 32 MB
+   - Maximum Memory Size: 2048 MB
+   - Memory Growth Mode: Geometric
+
+### Using Editor Build Helper
+
+The project includes an Editor script for easier builds:
+
+1. **Validate Project:**
+   - Go to `Build > Validate Project`
+   - Checks if all prefabs are assigned
+   - Reports any missing references
+
+2. **Quick WebGL Build:**
+   - Go to `Build > WebGL Build`
+   - Select output folder
+   - Build completes automatically
+
 ## Development Notes
 
 ### Adding New Products
@@ -256,6 +287,14 @@ Edit `CustomerAI.cs` to modify:
 
 Select scene object with `FinanceManager` component, change:
 - `currentMoney` - Starting capital
+
+### Code Organization
+
+The project uses Assembly Definition files for better compilation:
+- `SupermarketTycoon` - Runtime scripts
+- `SupermarketTycoon.Editor` - Editor-only scripts
+
+This improves compile times and enforces code boundaries.
 
 ## Known Limitations (MVP)
 
