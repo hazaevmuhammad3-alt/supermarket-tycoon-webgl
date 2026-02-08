@@ -2,7 +2,7 @@
 SUPERMARKET TYCOON MVP - QUICK START GUIDE
 ================================================================================
 
-Unity Version: 6000.0.23f1 (Unity 6)
+Unity Version: 6000.3.2f1 (Unity 6)
 Build Target: WebGL (Built-in Render Pipeline)
 Status: READY FOR UNITY EDITOR
 
@@ -13,7 +13,7 @@ IMMEDIATE STEPS
 1. OPEN IN UNITY
    - Open Unity Hub
    - Click "Add" → Select this project folder
-   - Open with Unity 6000.0.23f1+
+   - Open with Unity 6000.3.2f1+
 
 2. ASSIGN PREFABS (CRITICAL!)
    
@@ -112,7 +112,7 @@ WebGL build fails?
 NEXT STEPS
 ================================================================================
 
-1. Open project in Unity 6000.0.23f1+
+1. Open project in Unity 6000.3.2f1+
 2. Assign all prefab references (see step 2 above)
 3. Press Play to test
 4. Try placing objects with 'B' key

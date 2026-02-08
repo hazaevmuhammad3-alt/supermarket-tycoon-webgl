@@ -1,12 +1,12 @@
 ================================================================================
-UNITY 6000.0.23f1 WEBGL PROJECT - SUPERMARKET TYCOON MVP
+UNITY 6000.3.2f1 WEBGL PROJECT - SUPERMARKET TYCOON MVP
 ================================================================================
 STATUS: ✅ COMPLETE & READY FOR UNITY EDITOR
 ================================================================================
 
 PROJECT SUMMARY
 ---------------
-- Unity Version: 6000.0.23f1 (Unity 6)
+- Unity Version: 6000.3.2f1 (Unity 6)
 - Render Pipeline: Built-in
 - Platform: WebGL (Primary)
 - Project Type: 3D Tycoon/Management Game
@@ -60,7 +60,7 @@ DOCUMENTATION
 
 NEXT STEPS
 ----------
-1. Open project in Unity Hub with Unity 6000.0.23f1+
+1. Open project in Unity Hub with Unity 6000.3.2f1+
 2. Assign prefabs in GridManager and CustomerSpawner (CRITICAL!)
 3. Press Play to test
 4. Build for WebGL
@@ -105,5 +105,5 @@ TESTING CHECKLIST
  Test in browser
 
 ================================================================================
-PROJECT READY FOR DEVELOPMENT - OPEN IN UNITY 6000.0.23f1+
+PROJECT READY FOR DEVELOPMENT - OPEN IN UNITY 6000.3.2f1+
 ================================================================================

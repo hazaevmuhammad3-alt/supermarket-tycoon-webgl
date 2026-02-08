@@ -5,7 +5,7 @@
 ### 1. Open Project in Unity
 - Open Unity Hub
 - Click "Add" > Select this project folder
-- Open with Unity 6000.0.23f1 or later
+- Open with Unity 6000.3.2f1 or later
 
 ### 2. Assign Prefab References (REQUIRED!)
 

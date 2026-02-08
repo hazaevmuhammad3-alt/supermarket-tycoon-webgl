@@ -1,7 +1,7 @@
 # Supermarket Tycoon MVP - Project Summary
 
 ## Project Details
-- **Unity Version:** 6000.0.23f1
+- **Unity Version:** 6000.3.2f1
 - **Render Pipeline:** Built-in
 - **Platform:** WebGL (Primary), Standalone (Secondary)
 - **Project Type:** 3D Tycoon/Management Game
@@ -44,7 +44,7 @@
 
 ### Project Settings (6 files)
 - `ProjectSettings.asset` - WebGL configured, Built-in pipeline
-- `ProjectVersion.txt` - Unity 6000.0.23f1
+- `ProjectVersion.txt` - Unity 6000.3.2f1
 - `EditorBuildSettings.asset` - MainScene included
 - `TagManager.asset` - Custom tags and layers
 - `QualitySettings.asset` - 3 quality levels configured
@@ -239,7 +239,7 @@ Without these assignments, the game will log warnings and not function properly.
 
 ## Testing Checklist
 
-- [ ] Open project in Unity 6000.0.23f1+
+- [ ] Open project in Unity 6000.3.2f1+
 - [ ] Assign all prefab references
 - [ ] Enter Play Mode
 - [ ] Verify customers spawn every 5 seconds

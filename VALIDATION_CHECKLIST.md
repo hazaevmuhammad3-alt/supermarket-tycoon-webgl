@@ -229,7 +229,7 @@
 ## ⚠️ Manual Steps Required After Opening
 
 ### CRITICAL - Must Do in Unity Editor:
-1. [ ] Open project in Unity 6000.0.23f1+
+1. [ ] Open project in Unity 6000.3.2f1+
 2. [ ] Assign ShelfPrefab to GridManager
 3. [ ] Assign FridgePrefab to GridManager
 4. [ ] Assign CheckoutPrefab to GridManager

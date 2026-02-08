@@ -1,10 +1,10 @@
 # Supermarket Tycoon MVP
 
-A Unity 6000.0.23f1 WebGL game project built with the Built-in Render Pipeline. This is a minimum viable product (MVP) for a supermarket management tycoon game.
+A Unity 6000.3.2f1 WebGL game project built with the Built-in Render Pipeline. This is a minimum viable product (MVP) for a supermarket management tycoon game.
 
 ## Project Overview
 
-**Unity Version:** 6000.0.23f1  
+**Unity Version:** 6000.3.2f1  
 **Render Pipeline:** Built-in  
 **Target Platform:** WebGL  
 **Project Type:** 3D Game
@@ -113,7 +113,7 @@ ProjectSettings/
 
 ### Prerequisites
 - Unity Hub installed
-- Unity 6000.0.23f1 (or compatible Unity 6 version)
+- Unity 6000.3.2f1 (or compatible Unity 6 version)
 - WebGL Build Support module installed
 
 ### Opening the Project
@@ -121,7 +121,7 @@ ProjectSettings/
 1. Clone or download this repository
 2. Open Unity Hub
 3. Click "Add" and select the project folder
-4. Open the project with Unity 6000.0.23f1 or later
+4. Open the project with Unity 6000.3.2f1 or later
 
 ### First-Time Setup
 
@@ -327,6 +327,6 @@ This is a sample/educational project. Feel free to use and modify as needed.
 
 ## Credits
 
-**Developed with Unity 6000.0.23f1**  
+**Developed with Unity 6000.3.2f1**  
 Built-in Render Pipeline  
 WebGL Target Platform
