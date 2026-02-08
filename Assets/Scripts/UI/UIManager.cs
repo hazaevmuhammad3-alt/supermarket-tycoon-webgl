@@ -181,4 +181,44 @@ public class UIManager : MonoBehaviour
     {
         Debug.Log($"Show purchase UI for {productName}");
     }
+
+    public void PurchaseStock(string productName, int quantity)
+    {
+        if (InventoryManager.Instance != null)
+        {
+            bool success = InventoryManager.Instance.PurchaseStock(productName, quantity);
+            if (success)
+            {
+                Debug.Log($"Purchased {quantity}x {productName}");
+            }
+            else
+            {
+                Debug.Log($"Failed to purchase {productName} - not enough money");
+            }
+        }
+    }
+
+    public void OnShelfClicked(ShelfController shelf)
+    {
+        if (shelf == null) return;
+
+        if (string.IsNullOrEmpty(shelf.stockedProductName))
+        {
+            Debug.Log("Shelf is empty - showing product selection UI");
+        }
+        else
+        {
+            int availableStock = InventoryManager.Instance.GetStock(shelf.stockedProductName);
+            int canStock = Mathf.Min(availableStock, shelf.maxCapacity - shelf.currentStock);
+            
+            if (canStock > 0)
+            {
+                shelf.StockShelf(shelf.stockedProductName, canStock);
+            }
+            else if (availableStock == 0)
+            {
+                Debug.Log($"No {shelf.stockedProductName} in inventory - purchase from shop (S key)");
+            }
+        }
+    }
 }
